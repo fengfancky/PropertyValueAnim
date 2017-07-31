@@ -72,13 +72,15 @@ SineTypeEvaluator：
 
 运动曲线：
 
-  x=a*(2*cos(t)-cos(2*t));
-  y=a*(2*sin(t)-sin(2*t))
+x=a*(2*cos(t)-cos(2*t));
 
-  变换为：
+y=a*(2*sin(t)-sin(2*t));
 
-  y=a*(-2*cos(t)+cos(2*t));
-  x=a*(-2*sin(t)+sin(2*t))
+变换为：
+
+y=a*(-2*cos(t)+cos(2*t));
+
+x=a*(-2*sin(t)+sin(2*t));
 
     ValueAnimator animation = ValueAnimator.ofInt(0, 360);
         animation.setDuration(6000);
