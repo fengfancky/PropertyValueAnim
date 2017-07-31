@@ -96,14 +96,6 @@ x=a*(-2*sin(t)+sin(2*t));
                 double t=2*3.14/360*angle;//弧度制
                 mText2.setTranslationY((float) (100*(-2*Math.cos(t)+Math.cos(2*t))));
                 mText2.setTranslationX((float) (100*(-2*Math.sin(t)+Math.sin(2*t))));
-
-                View view =new View(MainActivity.this);
-                RelativeLayout.LayoutParams layoutParams=new RelativeLayout.LayoutParams(5,5);
-                view.setLayoutParams(layoutParams);
-                view.setBackgroundResource(R.drawable.heart_line_shape);
-                view.setTranslationY((float) (100*(-2*Math.cos(t)+Math.cos(2*t)))+dip2px(200,MainActivity.this));
-                view.setTranslationX((float) (100*(-2*Math.sin(t)+Math.sin(2*t)))+dip2px(200,MainActivity.this));
-                mainLayout.addView(view);
             }
         });
         animation.start();
